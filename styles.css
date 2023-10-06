@@ -1,0 +1,75 @@
+body {
+    background-color: #e1e1e1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Mono', monospace;
+  }
+  
+  .logo-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the width of your logo as needed */
+  }
+  
+  .content-section {
+    display: flex;
+    align-items: center; /* Aligns the content vertically */
+    padding: 40px; /* Increased padding for larger gap */
+  }
+  
+  .content {
+    width: 45%; /* Adjust the width of each content section */
+    text-align: center; /* Center-align content within each section */
+  }
+  
+  .content.left {
+    margin-right: 30px; /* Adjust the margin to move it more to the left */
+  }
+  
+  .content__title {
+    font-weight: bold;
+    margin-bottom: 10px; /* Added margin to create gap between title and text */
+  }
+  
+  .content__text {
+    margin-top: 10px;
+  }
+  
+  /* Added margin between paragraphs */
+  .content .content__text {
+    margin-bottom: 20px;
+  }
+  
+  .gif {
+    width: 120px; /* Adjust the width of the GIF */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0 -4px -30px; /* Adjust the margins as needed (top, right, bottom, left) */
+  }
+  
+  .additional-section {
+    text-align: center;
+    margin: 20px 0; /* Adjust the margin to space it out */
+  }
+  
+  .additional-section p {
+    margin: 10px 0;
+  }
+  
+  .portfolio-section {
+    text-align: center;
+    margin: 80px;
+  }
+  
+  .portfolio__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio__text {
+    font-size: 18px;
+  }
+  
