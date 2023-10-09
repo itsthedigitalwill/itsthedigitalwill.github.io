@@ -3,73 +3,180 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Fira Mono', monospace;
-  }
-  
-  .logo-container {
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 23px 0;
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #791616; /* Red on hover */
+}
+
+/* Logo Styles */
+.logo-container {
     text-align: center;
     padding: 20px 0;
-  }
-  
-  .logo {
-    width: 200px; /* Adjust the width of your logo as needed */
-  }
-  
-  .content-section {
-    display: flex;
-    align-items: center; /* Aligns the content vertically */
-    padding: 40px; /* Increased padding for larger gap */
-  }
-  
-  .content {
-    width: 45%; /* Adjust the width of each content section */
-    text-align: center; /* Center-align content within each section */
-  }
-  
-  .content.left {
-    margin-right: 30px; /* Adjust the margin to move it more to the left */
-  }
-  
-  .content__title {
-    font-weight: bold;
-    margin-bottom: 10px; /* Added margin to create gap between title and text */
-  }
-  
-  .content__text {
+}
+
+.logo {
+    width: 200px;
+}
+
+/* Spinning Star GIF Styles */
+.gif {
+    width: 120px;
+    height: auto;
+    margin: 20px auto; 
+    display: block;
+    /* Adjusted margin to not move the star */
+}
+
+.Tech-Artist {
+    text-align: center;
     margin-top: 10px;
-  }
-  
-  /* Added margin between paragraphs */
-  .content .content__text {
-    margin-bottom: 20px;
-  }
-  
-  .gif {
-    width: 120px; /* Adjust the width of the GIF */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0 -4px -30px; /* Adjust the margins as needed (top, right, bottom, left) */
-  }
-  
-  .additional-section {
-    text-align: center;
-    margin: 20px 0; /* Adjust the margin to space it out */
-  }
-  
-  .additional-section p {
-    margin: 10px 0;
-  }
-  
-  .portfolio-section {
-    text-align: center;
-    margin: 80px;
-  }
-  
-  .portfolio__title {
-    font-size: 20px;
+}
+
+.Tech-Artist-Title {
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Typing Section Styles */
+.typingcont {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.typingcont h1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Custom styles for the button */
+.scroll-button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 10px auto 0; /* Adjusted margin to move the button up */
+}
+
+.scroll-button::after {
+    content: '\f107'; /* Unicode for a downward arrow */
+    font-family: FontAwesome; /* Using FontAwesome for the arrow */
+    position: absolute;
+    right: 10px;
+}
+
+/* Adjusted margin for About Me section */
+
+/* Adjusted margin and padding for About Me section */
+.about {
+    background: #bcbcbc;
+    padding: 60px; /* Adjusted padding to condense the text */
+    margin-top: 35vh;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.gif2 {
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: 117vh; /* Adjusted top position */
+    right: 20px; /* Adjusted right position */
+}
+
+
+.home__name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right; /* Align the title to the left */
+    margin-right: 860px;
+    margin-bottom: 10px; /* Add some space between the title and text */
+    margin-top: 80px;
+}
+
+.home__info {
+    font-weight: regular;
+    font-size: 15px;
+    text-align: left;
+}
+.about .home__info {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.about .aboutline {
+    border-bottom: 3px solid black;
+    width: 48%;
+    margin-top: 20px;
+}
+
+
+.skills {
+    margin-top: 200px; /* Moved Skills section further down */
+    padding: 20px;
+}
+
+.skills-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px; /* Add space between Skills title and About Me */
+    text-align: right;
+    margin-right: 430px; /*move title left and right*/
+
+
+}
+
+/* ... previous styles ... */
+
+.skills-content {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between texts */
+    margin-top: 50px; /* Adjust vertical position */
+}
+
+.skills-left {
+    margin-bottom: 20px; /* Adjust vertical spacing */
+}
+
+.skills-right {
+    margin-top: 20px; /* Adjust vertical spacing */
+}
+
+@media (max-width: 767px) {
+    /* CSS rules for smaller screens (e.g., phones) */
   }
   
-  .portfolio__text {
-    font-size: 18px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for medium-sized screens */
   }
   
+  @media (min-width: 992px) {
+    /* CSS rules for larger screens (e.g., desktops) */
+  }
+

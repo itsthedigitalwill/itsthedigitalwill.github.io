@@ -4,40 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
   <title>itsthedigitalwill</title>
+  <style>
+    /* Custom styles for the button */
+    .scroll-button {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      display: block;
+      margin: 10px auto 0; /* Adjusted margin to move the button up */
+    }
+
+    .scroll-button::after {
+      content: '\f107'; /* Unicode for a downward arrow */
+      font-family: FontAwesome; /* Using FontAwesome for the arrow */
+      position: absolute;
+      right: 10px;
+    }
+
+    /* Adjusted margin for About Me section */
+    .about {
+      background: #bcbcbc;
+      padding: 50px;
+      margin-top: 48.5vh;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- Navbar section -->
+  <nav class="navbar">
+    <a href="#" class="nav-link">HOME</a>
+    <a href="#about" class="nav-link" onclick="scrollToAbout()">ABOUT ME</a>
+    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+    <a href="contact.html" class="nav-link">CONTACT ME</a>
+  </nav>
+  <!-- End of Navbar section -->
+
+  <!-- Logo section -->
   <div class="logo-container">
     <img src="logotrans.png" alt="Logo" class="logo">
   </div>
+  <!-- End of Logo section -->
 
-  <div class="content-section">
-    <div class="content left">
-      <h2 class="content__title">Tech</h2>
-      <p class="content__text">UI/UX, HTML, Python, CSS, Java, C, JavaScript</p>
+  <!-- Spinning Star GIF -->
+  <img src="starspinning.gif" alt="Spinning Star GIF" class="gif">
+  <!-- End of Spinning Star GIF -->
+
+  <!-- Home section -->
+  <section class="home" id="home">
+    <div class="Tech-Artist">
+      <h2 class="Tech-Artist-Title">Tech-Artist</h2>
     </div>
 
-    <!-- Add the GIF here -->
-    <img src="starspinning.gif" alt="Spinning Star GIF" class="gif">
-
-    <div class="content right">
-      <h2 class="content__title">Artist</h2>
-      <p class="content__text">Adobe Photoshop, ClipStudio, Procreate, Canva, Figma, Adobe Illustrator</p>
+    <!-- Typing section -->
+    <div class="typingcont">
+      <h1>Computer science engineer with interest in <span class="auto-type"> </span></h1>
     </div>
-  </div>
 
-  <div class="additional-section">
-    <p>Computer science engineer with interest in software development, web development, and digital art.</p>
-  </div>
+    <button class="scroll-button" onclick="scrollToAbout()">Scroll to About Me</button>
+  </section>
+  <!-- End of Home section -->
 
-  <div class="portfolio-section">
-    <h2 class="portfolio__title">Portfolio</h2>
-    <p class="portfolio__text">Click a link to explore</p>
-  </div>
+  <!-- About Me section -->
+<section class="about" id="about">
+    <div class="home__name">ABOUT ME</div>
+    <div class="home__info">
+        I am a computer science student with a passion for both art and technology. I build projects to strengthen my interest, ranging from UI/UX design, web development, and interactive software.
+    </div>
+    <div class="aboutline"></div>
+    <div class="gif.container">
+        <img src="starspinning 2.gif" alt="Spinning Star GIF" class="gif2">
+    </div>
 
+    <div class="skills">
+        <div class="skills-title">Skills</div>
+        <div class="skills-content">
+            <div class="skills-left">UI/UX, Html, Python, CSS, Java, C, Javascript</div>
+            <div class="skills-right">Adobe Photosho, Clipstudio, Procreate, Canva, Figma, Adobe Illustrator</div>
+        </div>
+    </div>
+    
+</section>
+
+  <!-- End of About Me section -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Typing code -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["software development", "web development", "digital art"],
+      typeSpeed: 90,
+      backSpeed: 90,
+      loop: true
+    });
+
+    //scroll code//
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '60px',
+      duration: 2500,
+      delay: 480,
+      reset: true //animations repeat
+    });
+
+    sr.reveal('.home__name', { origin: 'left', distance: '20px', duration: 1000 });
+    sr.reveal('.home__info', { origin: 'bottom', distance: '20px', duration: 1000 });
+
+    // Function to scroll to About Me section
+    function scrollToAbout() {
+      const aboutSection = document.getElementById('about');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
-
-
-
-
