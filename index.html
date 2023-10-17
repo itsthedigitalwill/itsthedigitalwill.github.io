@@ -3,126 +3,319 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <title>itsthedigitalwill</title>
-  <style>
-    /* Custom styles for the button */
-    .scroll-button {
-      background-color: black;
-      color: white;
-      padding: 20px;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      display: block;
-      margin: 10px auto 0; /* Adjusted margin to move the button up */
-    }
 
-    .scroll-button::after {
-      content: '\f107'; /* Unicode for a downward arrow */
-      font-family: FontAwesome; /* Using FontAwesome for the arrow */
-      position: absolute;
-      right: 10px;
-    }
+  <!-- REMIXICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
-    /* Adjusted margin for About Me section */
-    .about {
-      background: #bcbcbc;
-      padding: 50px;
-      margin-top: 48.5vh;
-      text-align: center;
-    }
-  </style>
+    <!-- CSS --------------->
+    <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS GG -->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-r.css' rel='stylesheet'>
+
+   <!-- CSS --------------->
+   <link rel="stylesheet" href="styles.css">
+
+   <!--TYPING-->
+
+   <script src="script.js"></script>
+   <!-- Typed.js for typing animation -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+   <title>itsthedigitalwill</title>
 </head>
+    <body>
+        <!--========================HEADER=======-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <span class="nav__logo-circle">dw</span>
+                </a>
 
-<body>
-  <!-- Navbar section -->
-  <nav class="navbar">
-    <a href="#" class="nav-link">HOME</a>
-    <a href="#about" class="nav-link" onclick="scrollToAbout()">ABOUT ME</a>
-    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-    <a href="contact.html" class="nav-link">CONTACT ME</a>
-  </nav>
-  <!-- End of Navbar section -->
+                <div class="nav__menu" id="nav-menu">
+                    
+                    <!--<span class="nav__title">menu.</span>-->
 
-  <!-- Logo section -->
-  <div class="logo-container">
-    <img src="logotrans.png" alt="Logo" class="logo">
-  </div>
-  <!-- End of Logo section -->
+                    <h3 class="nav__name">digitallwill</h3>
 
-  <!-- Spinning Star GIF -->
-  <img src="starspinning.gif" alt="Spinning Star GIF" class="gif">
-  <!-- End of Spinning Star GIF -->
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">home.</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about me" class="nav__link">about me.</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">portfolio.</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">contact Me.</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-  <!-- Home section -->
-  <section class="home" id="home">
-    <div class="Tech-Artist">
-      <h2 class="Tech-Artist-Title">Tech-Artist</h2>
-    </div>
+                <div class="nav__buttons">
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+             </nav>
+            </header>
 
-    <!-- Typing section -->
-    <div class="typingcont">
-      <h1>Computer science engineer with interest in <span class="auto-type"> </span></h1>
-    </div>
+            <!--<div class="home__perfil">-->
 
-    <button class="scroll-button" onclick="scrollToAbout()">Scroll to About Me</button>
-  </section>
-  <!-- End of Home section -->
+            <!--==================== MAIN ====================-->
+            <main class="main">
+                <!--==================== HOME ====================-->
+                <section class="home section" id="home">
+                    <div class="home__container container grid">
+                        <!--<h1 class="home__name">
+                                    Tech-Artist
+                                </h1>-->
 
-  <!-- About Me section -->
-<section class="about" id="about">
-    <div class="home__name">ABOUT ME</div>
-    <div class="home__info">
-        I am a computer science student with a passion for both art and technology. I build projects to strengthen my interest, ranging from UI/UX design, web development, and interactive software.
-    </div>
-    <div class="aboutline"></div>
-    <div class="gif.container">
-        <img src="starspinning 2.gif" alt="Spinning Star GIF" class="gif2">
-    </div>
+                                <div class="home__perfil">
+                                    <img src="logotrans.png" alt="image" class="home__img">
+                                    <div class="home__shadow"></div>
+                                    <img src="pixelhead.png" alt="Spinning Star GIF" class="gif__1">
+                                </div>
+                                
+                                <div class="home__social">
+                                    <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="home__social-link">
+                                        <i class="ri-linkedin-box-line"></i>
+                                    </a>
+                                    
+                                    <a href="https://github.com/itsthedigitalwill" target="_blank" class="home__social-link">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="home__info">
+                                    <p class="home__description">
+                                        <h1>Computer science engineer with interest in <span class="auto-type"> </span></h1>
+                                        <div>
+                                    </p>
+                                    <a href="#about" class="home__scroll" id="scroll-button">
+                                        <div class="home__scroll-box">
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </div>
+                                        <span class="home__scroll-text">scroll down.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <!--==================== ABOUT ====================-->
+                        <section class="about section" id="about">
+                            <div class="about__container container grid">
+                                <h2 class="section__title-1">
+                                    about me.
+                                </h2>
+                                <div class="about__perfil">
+                                    <div class="about__image">
+                                        <img src="pixelhead2.png" alt="spinning star gif 2" class="gif__2">
 
-    <div class="skills">
-        <div class="skills-title">Skills</div>
-        <div class="skills-content">
-            <div class="skills-left">UI/UX, Html, Python, CSS, Java, C, Javascript</div>
-            <div class="skills-right">Adobe Photosho, Clipstudio, Procreate, Canva, Figma, Adobe Illustrator</div>
-        </div>
-    </div>
-    
-</section>
+                                        <div class="about__shadow"></div>
 
-  <!-- End of About Me section -->
+                                        <div class="about__box"></div>
+                                    </div>
+                                </div>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+                                <div class="about__info">
+                                    <p class="about__description">
+                                        I am a computer science student with a passion for both 
+                                        art and technology. I build projects to strengthen my interest,
+                                        ranging from UI/UX design, web development, 
+                                        and interactive software.
+                                    </p>
+                                    <ul class="about__list">
+                                        <li class="about__item">
+                                            <b>skills.</b>UI/UX, Html, Python, CSS, Java, C, Javascript,
+                                            Adobe Photoshop, Clipstudio, Procreate, Canva, Figma, Adobe Illustrator.
+                                        </li>
+                                    </ul>
 
-  <!-- Typing code -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed(".auto-type", {
-      strings: ["software development", "web development", "digital art"],
-      typeSpeed: 90,
-      backSpeed: 90,
-      loop: true
-    });
+                                    <div class="about__buttons">
+                                        <a href="#contact" class="button">
+                                            <i class="ri-send-plane-line"></i> contact me.
+                                        </a>
 
-    //scroll code//
-    const sr = ScrollReveal({
-      origin: 'top',
-      distance: '60px',
-      duration: 2500,
-      delay: 480,
-      reset: true //animations repeat
-    });
+                                        <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="button__ghost">
+                                            <i class="ri-linkedin-box-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--==================== PORTFOLIO ====================-->
+                        <section class="projects section" id="projects">
+                            <h2 class="section__title-1">
+                                <span>portfolio.</span>
+                            </h2>
 
-    sr.reveal('.home__name', { origin: 'left', distance: '20px', duration: 1000 });
-    sr.reveal('.home__info', { origin: 'bottom', distance: '20px', duration: 1000 });
+                            <div class="projects__container container grid">
+                                <article class="projects__card">
+                                    <div class="projects__image">
+                                        <img src="desktopmock.png" alt="image" class="projects__img">
+                                        <a href="#" class="projects__button button">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
 
-    // Function to scroll to About Me section
-    function scrollToAbout() {
-      const aboutSection = document.getElementById('about');
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-</body>
+                                    <div class="projects__cotent">
+                                        <h3 class="projects__subtitle">
+                                            website.
+                                        </h3>
+                                        <h2 class="projects__title">
+                                            my personal website.
+                                        </h2>
+
+                                        <p class="projects__description">
+                                            My personal website done by scratch using html, javascript, and CSS
+                                            to showcase my computer software journey through projects. 
+                                        </p>
+                                    </div>
+
+                                    <div class="projects__buttons">
+                                        <a href="https://github.com/itsthedigitalwill/itsthedigitalwill.github.io" target="_blank" class="projects__link">
+                                            <i class="ri-github-line"></i> take a peek.
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        
+                        
+                        <!--====================CONTACT====================-->
+                        <section class="contact section" id="contact">
+                            <div class="contact__container grid">
+                                <div class="contact__data">
+                                    <h2 class="section__title-2">
+                                        <span>contact me.</span>
+                                    </h2>
+
+                                    <!--<p class="contact__description-1">
+                                        or dont.
+                                    </p>-->
+
+                                </div>
+                                <div class="contact__mail">
+                                    <h2 class="contact__title">
+                                        fill in your info below.
+                                    </h2>
+
+                                    <form action="" class="contact__form" id="contact-form">
+                                        <div class="contact__group">
+                                            <div class="contact__box">
+                                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="first name">
+                                                <label for="name" class="contact__label">first name.</label>
+                                            </div>
+
+                                            <div class="contact__box">
+                                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="email address.">
+                                                <label for="email" class="contact__label">email address.</label>
+                                            </div>
+
+                                            <div class="contact__box">
+                                                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="subject.">
+                                                <label for="subject" class="contact__label">subject.</label>
+                                            </div>
+
+                                            <div class="contact__box contact__area">
+                                                <input type="text" name="user_message" class="contact__input" id="message" required placeholder="message.">
+                                                <label for="message" class="contact__label">message.</label>
+                                            </div>
+
+                                            <p class="contact__message" id="contact-message"></p>
+
+                                            <button type="submit" class="contact__button button">
+                                                <i class="ri-send-plane-line"></i> send.
+
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <div class="contact__social">
+                                        <img src="" alt="" class="contact__social-arrow">
+                                        
+                                        <div class="contact__social-data">
+                                            <div>
+                                                <p class="contact__social-description-1">
+                                                    I will respond to your email as soon as possible.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+
+                        <!--==================== FOOTER ====================-->
+                        <footer class="footer">
+                            <div class="footer__container container grid">
+                                <ul class="footer__links">
+                                    <li>
+                                        <a href="about" class="footer__link">about.</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#portfolio" class="footer__link">portfolio.</a>
+                                    </li>
+
+                                    <span class="footer__copy">
+                                        &#169; All Rights Reserved By
+                                        <a href="">Bedimcode.</a>
+                                    </span>
+                                </ul>
+                            </div>
+                        </footer>
+                        
+                        <!--========== SCROLL UP ==========-->
+                        <a href="" class="scrollup" id="scroll-up">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </a>
+
+                        <!--=============== SCROLLREVEAL ===============-->
+                        
+                        <script src=""></script>
+                        
+                        <!--=============== EMAIL JS ===============-->
+                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                        
+                        
+                        
+                        <!--=============== MAIN ===============-->
+                        
+                        <script src="main.js"></script>
+
+
+
+    <!--=============== TYPING ===============-->
+     <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["software development", "web development", "digital art"],
+          typeSpeed: 90,
+          backSpeed: 90,
+          loop: true
+        });
+      </script>
+     
+
+<!--=============== SCRIPT FILE ===============-->
+<script src="script.js"></script>
+
+<!-- Typed.js for typing animation -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+  </body>
 </html>
+
+
+
+
