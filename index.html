@@ -3,40 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="tabcon.png" sizes="64x64">
 
-  <!-- REMIXICONS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+
+
+  <!-- ------------REMIXICONS --------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
-    <!-- CSS --------------->
+    <!------------ CSS --------------->
     <link rel="stylesheet" href="styles.css">
 
-  <!-- CSS GG -->
+  <!------------ CSS GG ---------------->
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-r.css' rel='stylesheet'>
 
-   <!-- CSS --------------->
+   <!------------ CSS --------------->
    <link rel="stylesheet" href="styles.css">
 
-   <!--TYPING-->
+   <!--Light-Box-css-------------------------------->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+   <!-----------TYPING----------->
+
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- JavaScript files -->
+    <script src="main.js"></script>
+    <script src="script.js"></script>
 
    <script src="script.js"></script>
    <!-- Typed.js for typing animation -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+<!---------------------icons8-------------------->
+
+<link type="image/png" sizes="32x32" rel="icon" href="path_to_your_icon/icons8-adobe-illustrator-32.png">
+
 
    <title>itsthedigitalwill</title>
 </head>
     <body>
-        <!--========================HEADER=======-->
+        <!--===========HEADER=======-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <span class="nav__logo-circle">dw</span>
                 </a>
-
                 <div class="nav__menu" id="nav-menu">
-                    
-                    <!--<span class="nav__title">menu.</span>-->
-
                     <h3 class="nav__name">digitallwill</h3>
 
                     <ul class="nav__list">
@@ -44,10 +59,10 @@
                             <a href="#home" class="nav__link">home.</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about me" class="nav__link">about me.</a>
+                            <a href="#about" class="nav__link">about me.</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">portfolio.</a>
+                            <a href="#projects" class="nav__link">portfolio.</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">contact Me.</a>
@@ -61,25 +76,20 @@
                 </div>
 
                 <div class="nav__buttons">
+
                     <!-- Toggle button -->
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-4-line"></i>
+                        <i class="ri-menu-line"></i>
                     </div>
                 </div>
              </nav>
             </header>
-
-            <!--<div class="home__perfil">-->
 
             <!--==================== MAIN ====================-->
             <main class="main">
                 <!--==================== HOME ====================-->
                 <section class="home section" id="home">
                     <div class="home__container container grid">
-                        <!--<h1 class="home__name">
-                                    Tech-Artist
-                                </h1>-->
-
                                 <div class="home__perfil">
                                     <img src="logotrans.png" alt="image" class="home__img">
                                     <div class="home__shadow"></div>
@@ -90,16 +100,22 @@
                                     <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="home__social-link">
                                         <i class="ri-linkedin-box-line"></i>
                                     </a>
-                                    
+
                                     <a href="https://github.com/itsthedigitalwill" target="_blank" class="home__social-link">
                                         <i class="ri-github-line"></i>
                                     </a>
                                 </div>
+                                   <!------======home lines============-->
+                                <div class="horizontal-line1"></div>
+                                <div class="horizontal-line2"></div>
+                                <div class="horizontal-line3"></div>
+
+                                <!--black box home-->
+                                <div class="under__box"></div>
                                 
                                 <div class="home__info">
                                     <p class="home__description">
-                                        <h1>Computer science engineer with interest in <span class="auto-type"> </span></h1>
-                                        <div>
+                                        Computer science programmer with interest in <span class="auto-type"></span>
                                     </p>
                                     <a href="#about" class="home__scroll" id="scroll-button">
                                         <div class="home__scroll-box">
@@ -110,10 +126,11 @@
                                 </div>
                             </div>
                         </section>
+
                         <!--==================== ABOUT ====================-->
                         <section class="about section" id="about">
                             <div class="about__container container grid">
-                                <h2 class="section__title-1">
+                                <h2 class="about__section-title">
                                     about me.
                                 </h2>
                                 <div class="about__perfil">
@@ -133,64 +150,116 @@
                                         ranging from UI/UX design, web development, 
                                         and interactive software.
                                     </p>
-                                    <ul class="about__list">
-                                        <li class="about__item">
-                                            <b>skills.</b>UI/UX, Html, Python, CSS, Java, C, Javascript,
-                                            Adobe Photoshop, Clipstudio, Procreate, Canva, Figma, Adobe Illustrator.
-                                        </li>
-                                    </ul>
 
                                     <div class="about__buttons">
                                         <a href="#contact" class="button">
                                             <i class="ri-send-plane-line"></i> contact me.
                                         </a>
-
                                         <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="button__ghost">
-                                            <i class="ri-linkedin-box-line"></i>
+                                            <div class="icon-container">
+                                                <i class="ri-search-line"></i>
+                                            </div>
+                                            <div class="text-container">
+                                                linkedin.com/in/queniya-williams-b3b89227a/
+                                            </div>
                                         </a>
+                                    </div>
+
+                                    <!--grey home box-->
+                                    <div class="under__boxh"></div>
+
+                                    <!--skills about + icons-->
+                                    <div class="about__skills">
+                                        <h2 class="skills__abt">
+                                            <span>skills.</span>
+                                        </h2>
+                                        <div class="skills__icons">
+                                            <div class="icon-container">
+                                                <img src="figma1.png" alt="Figma Icon">
+                                            </div>
+                                            <div class="icon-container">
+                                                <img src="canva1.png" alt="Canva Icon">
+                                            </div>
+                                            <div class="icon-container">
+                                                <img src="ps1.png" alt="Photoshop Icon">
+                                            </div>
+                                            <div class="icon-container">
+                                                <img src="adobe1.png" alt="Adobe Icon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- coding about + icons-->
+                                    <h2 class="skills__code">
+                                        <span>coding.</span>
+                                    </h2>
+                                    <div class="coding__icons">
+                                        <div class="icon-cont2">
+                                            <img src="python1.png" alt="Python Icon">
+                                        </div>
+                                        <div class="icon-cont2">
+                                            <img src="css1.png" alt="Css Icon">
+                                        </div>
+                                        <div class="icon-cont2">
+                                            <img src="html1.png" alt="Html Icon">
+                                        </div>
+                                        <div class="icon-cont2">
+                                            <img src="c++1.png" alt="Css Icon">
+                                        </div>
+                                    </div>
+                                    <a href="#projects" class="about__scroll" id="scroll-button">
+                                        <div class="about__scroll-box">
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </div>
+                                    </a>                                                                   
+
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <!--==================== PORTFOLIO ====================-->
-                        <section class="projects section" id="projects">
-                            <h2 class="section__title-1">
-                                <span>portfolio.</span>
-                            </h2>
+ <!--==================== PROJECTS SECTION====================-->
+<section class="projects section" id="projects">
+    <!--filter--------->
+    <ul class="portfolio-filter">
+        <li class="list portfolio-filter-active" data-filter="all">all.</li>
+        <li class="list" data-filter="app">projects.</li>
+        <li class="list" data-filter="ui">ui/ux.</li>
+    </ul>
+    <!--container--------->
+    <div class="portfolio-container">
 
-                            <div class="projects__container container grid">
-                                <article class="projects__card">
-                                    <div class="projects__image">
-                                        <img src="desktopmock.png" alt="image" class="projects__img">
-                                        <a href="#" class="projects__button button">
-                                            <i class="ri-arrow-right-up-line"></i>
-                                        </a>
-                                    </div>
+        <!--1------------>
+        <a href="webproj.png" class="portfolio-box app" data-lightbox="work">
+            <img alt="" src="webproj.png">
+        </a>
 
-                                    <div class="projects__cotent">
-                                        <h3 class="projects__subtitle">
-                                            website.
-                                        </h3>
-                                        <h2 class="projects__title">
-                                            my personal website.
-                                        </h2>
+        <!--2------------
+        <a href="images/b-2.jpg" class="portfolio-box app" data-lightbox="work">
+            <img alt="" src="images/b-2.jpg">
+        </a> -->
 
-                                        <p class="projects__description">
-                                            My personal website done by scratch using html, javascript, and CSS
-                                            to showcase my computer software journey through projects. 
-                                        </p>
-                                    </div>
+        <!--=================UI SEC---===================-->
+        <!--semmapspui------------>
+        <a href="semapps.png" class="portfolio-box ui" data-lightbox="work">
+            <img alt="" src="semapps.png">
+        </a>
+        <!--semdeskui------------>
+        <a href="semdes.png" class="portfolio-box ui" data-lightbox="work">
+            <img alt="" src="semdes.png">
+        </a>
+        <!--5----------->
+        <a href="webui.png" class="portfolio-box ui" data-lightbox="work">
+            <img alt="" src="webui.png">
+        </a> 
 
-                                    <div class="projects__buttons">
-                                        <a href="https://github.com/itsthedigitalwill/itsthedigitalwill.github.io" target="_blank" class="projects__link">
-                                            <i class="ri-github-line"></i> take a peek.
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-                        
-                        
+        <!--6------------
+        <a href="images/b-6.jpg" class="portfolio-box ui" data-lightbox="work">
+            <img alt="" src="images/b-6.jpg">
+        </a> -->
+
+    </div>
+</section>
+
                         <!--====================CONTACT====================-->
                         <section class="contact section" id="contact">
                             <div class="contact__container grid">
@@ -304,6 +373,22 @@
           loop: true
         });
       </script>
+
+<script>
+    $('.portfolio-filter li').click(function () {
+        $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active');
+    });
+
+    $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.portfolio-box').show('1000');
+        } else {
+            $('.portfolio-box').not('.' + value).hide('1000');
+            $('.portfolio-box').filter('.' + value).show('1000');
+        }
+    });
+</script>
      
 
 <!--=============== SCRIPT FILE ===============-->
@@ -315,7 +400,3 @@
 
   </body>
 </html>
-
-
-
-

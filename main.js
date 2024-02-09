@@ -1,112 +1,108 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('nav-toggle');
-        navClose = document.getElementById('nav-close');
-        navMenu = document.getElementById('nav-menu');
-  
-    if (navToggle) {
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show-menu');
-      });
-    }
-  
-    if (navClose) {
-      navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-      });
-    }
-  });
+  const navToggle = document.getElementById('nav-toggle');
+  const navClose = document.getElementById('nav-close');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show-menu');
+    });
+  }
+
+  if (navClose) {
+    navClose.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu');
+    });
+  }
 
   /*========REMOVE MENU MOBILE==================*/
-  const navLink = document.querySelectorAll('nav__link')
+  const navLinks = document.querySelectorAll('.nav__link');
+  
+  const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu');
+  };
 
-  const LinkAction = () =>{
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', linkAction);
+  });
 
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-  }
-  navLink.forEach(n => n.addEventListener('click', LinkAction))
+  /*========SHADOW HEADER==================*/
+  const shadowHeader = () => {
+    const header = document.getElementById('header');
+    if (window.scrollY >= 50) {
+      header.classList.add('shadow-header');
+    } else {
+      header.classList.remove('shadow-header');
+    }
+  };
+  window.addEventListener('scroll', shadowHeader);
 
+  /*========FORM STATE AND SUBMISSION==================*/
+  const formData = {
+    user_name: "",
+    user_email: "",
+    user_subject: "",
+    user_message: ""
+  };
 
- /*========SHAOW HEADER==================*/
- const shadowHeader = () =>{
-    const header = document.getElementById('header')
+  const contactForm = document.getElementById('contact-form');
+  const contactMessage = document.getElementById('contact-message');
 
-    this.scrollY >= 50 ? header.classList.add('shadow-header')
-                       : header.classList.remove('shadow-header')
-}
-window.addEventListener('scroll', shadowHeader);
+  const handleInputChange = (e) => {
+    formData[e.target.name] = e.target.value;
+  };
 
- /*========SHAOW HEADER==================*/
- const contactForm = document.getElementById('contact-form')
- const contactMessage = document.getElementById('contact-message')
- 
- const sendEmail = (e) => {
-     e.preventDefault()
- 
-     // serviceId - templateID- #form- publicKey
-     emailjs.sendForm('service_tm9nwo4', 'template_ov6q2j4', '#contact-form', 'jJQhfdsSHMG5ac5R2')
-         .then(() =>{
-             // show sent message
-             contactMessage.textContent = 'message sent successfully.'
- 
-             // remove message after 5 seconds
-             setTimeout(() =>{
-                 contactMessage.textContent = ''
-             }, 5000)
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-             contactForm.reset()
+    emailjs.sendForm('service_tm9nwo4', 'template_ov6q2j4', '#contact-form', 'jJQhfdsSHMG5ac5R2', formData)
+      .then(() => {
+        contactMessage.textContent = 'Message sent successfully.';
+        setTimeout(() => {
+          contactMessage.textContent = '';
+        }, 5000);
+        contactForm.reset();
+      })
+      .catch(() => {
+        contactMessage.textContent = 'Message not sent (service error).';
+      });
+  };
 
-         }, () =>{
-
-          //show error message
-          contactMessage.textContent = 'message not sent (service error)'
-
-         })
- }
-
- contactForm.addEventListener('submit', sendEmail)
-
+  contactForm.addEventListener('submit', sendEmail);
 
   /*========SCROLL UP==================*/
+  const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up');
+    if (window.scrollY >= 350) {
+      scrollUp.classList.add('show-scroll');
+    } else {
+      scrollUp.classList.remove('show-scroll');
+    }
+  };
 
-const scrollUp = () =>{
-        const scrollUp = document.getElementById('scroll-up')
-        this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-                            : scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll',scrollUp)
+  window.addEventListener('scroll', scrollUp);
 
-/*========SSCROLL SECTIONS ACTIVE LINK==================*/
-const sections = document.querySelectorAll('section[id]');
+  /*========SCROLL SECTIONS ACTIVE LINK==================*/
+  const sections = document.querySelectorAll('section[id]');
 
-const scrollArchive = () => {
+  const scrollArchive = () => {
     const scrollDown = window.scrollY;
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector(`.nav__link[href="#${sectionId}"]`);
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 58;
+      const sectionId = current.getAttribute('id');
+      const sectionsClass = document.querySelector(`.nav__link[href="#${sectionId}"]`);
 
-        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-            sectionsClass.classList.add('active-link');
-        } else {
-            sectionsClass.classList.remove('active-link');
-        }
+      if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+        sectionsClass.classList.add('active-link');
+      } else {
+        sectionsClass.classList.remove('active-link');
+      }
     });
-};
+  };
 
-window.addEventListener('scroll', scrollArchive);
-
-
-
-
-
-
- 
-
-
-
-  
+  window.addEventListener('scroll', scrollArchive);
+});
 
