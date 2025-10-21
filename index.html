@@ -1,402 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="tabcon.png" sizes="64x64">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="imgs/tabcon.png" sizes="64x64">
+    <link rel="stylesheet" href="styles.css"> <!---css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="main.js"></script>
-
-
-  <!-- ------------REMIXICONS --------->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
-    <!------------ CSS --------------->
-    <link rel="stylesheet" href="styles.css">
-
-  <!------------ CSS GG ---------------->
-  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-r.css' rel='stylesheet'>
-
-   <!------------ CSS --------------->
-   <link rel="stylesheet" href="styles.css">
-
-   <!--Light-Box-css-------------------------------->
-    <link rel="stylesheet" href="css/lightbox.min.css">
-
-   <!-----------TYPING----------->
-
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <!-- JavaScript files -->
-    <script src="main.js"></script>
-    <script src="script.js"></script>
-
-   <script src="script.js"></script>
-   <!-- Typed.js for typing animation -->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-<!---------------------icons8-------------------->
-
-<link type="image/png" sizes="32x32" rel="icon" href="path_to_your_icon/icons8-adobe-illustrator-32.png">
-
-
-   <title>itsthedigitalwill</title>
+    <title>Portfolio</title>
 </head>
-    <body>
-        <!--===========HEADER=======-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <h3 class="nav__name">digitallwill</h3>
+<body>
 
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">home.</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">about me.</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">portfolio.</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">contact Me.</a>
-                        </li>
-                    </ul>
-                    
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-
-                <div class="nav__buttons">
-
-                    <!-- Toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-             </nav>
-            </header>
-
-            <!--==================== MAIN ====================-->
-            <main class="main">
-                <!--==================== HOME ====================-->
-                <section class="home section" id="home">
-                    <div class="home__container container grid">
-                                <div class="home__perfil">
-                                    <img src="logotrans.png" alt="image" class="home__img">
-                                    <div class="home__shadow"></div>
-                                    <img src="" alt="Spinning Star GIF" class="gif__1">
-                                </div>
-                                
-                                <div class="home__social">
-                                    <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="home__social-link">
-                                        <i class="ri-linkedin-box-line"></i>
-                                    </a>
-
-                                    <a href="https://github.com/itsthedigitalwill" target="_blank" class="home__social-link">
-                                        <i class="ri-github-line"></i>
-                                    </a>
-                                </div>
-                                   <!------======home lines============-->
-                                <div class="horizontal-line1"></div>
-                                <div class="horizontal-line2"></div>
-                                <div class="horizontal-line3"></div>
-
-                                <!--black box home-->
-                                <div class="under__box"></div>
-                                
-                                <div class="home__info">
-                                    <p class="home__description">
-                                        Computer science programmer with interest in <span class="auto-type"></span>
-                                    </p>
-                                    <a href="#about" class="home__scroll" id="scroll-button">
-                                        <div class="home__scroll-box">
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </div>
-                                        <span class="home__scroll-text">scroll down.</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--==================== ABOUT ====================-->
-                        <section class="about section" id="about">
-                            <div class="about__container container grid">
-                                <h2 class="about__section-title">
-                                    about me.
-                                </h2>
-                                <div class="about__perfil">
-                                    <div class="about__image">
-                                        <img src="" alt="spinning star gif 2" class="gif__2">
-
-                                        <div class="about__shadow"></div>
-
-                                        <div class="about__box"></div>
-                                    </div>
-                                </div>
-
-                                <div class="about__info">
-                                    <p class="about__description">
-                                        I am a computer science student with a passion for both 
-                                        art and technology. I build projects to strengthen my interest,
-                                        ranging from UI/UX design, web development, 
-                                        and interactive software.
-                                    </p>
-
-                                    <div class="about__buttons">
-                                        <a href="#contact" class="button">
-                                            <i class="ri-send-plane-line"></i> contact me.
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/" target="_blank" class="button__ghost">
-                                            <div class="icon-container">
-                                                <i class="ri-search-line"></i>
-                                            </div>
-                                            <div class="text-container">
-                                                linkedin.com/in/queniya-williams-b3b89227a/
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!--grey home box-->
-                                    <div class="under__boxh"></div>
-
-                                    <!--skills about + icons-->
-                                    <div class="about__skills">
-                                        <h2 class="skills__abt">
-                                            <span>skills.</span>
-                                        </h2>
-                                        <div class="skills__icons">
-                                            <div class="icon-container">
-                                                <img src="figma1.png" alt="Figma Icon">
-                                            </div>
-                                            <div class="icon-container">
-                                                <img src="canva1.png" alt="Canva Icon">
-                                            </div>
-                                            <div class="icon-container">
-                                                <img src="ps1.png" alt="Photoshop Icon">
-                                            </div>
-                                            <div class="icon-container">
-                                                <img src="adobe1.png" alt="Adobe Icon">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- coding about + icons-->
-                                    <h2 class="skills__code">
-                                        <span>coding.</span>
-                                    </h2>
-                                    <div class="coding__icons">
-                                        <div class="icon-cont2">
-                                            <img src="python1.png" alt="Python Icon">
-                                        </div>
-                                        <div class="icon-cont2">
-                                            <img src="css1.png" alt="Css Icon">
-                                        </div>
-                                        <div class="icon-cont2">
-                                            <img src="html1.png" alt="Html Icon">
-                                        </div>
-                                        <div class="icon-cont2">
-                                            <img src="c++1.png" alt="Css Icon">
-                                        </div>
-                                    </div>
-                                    <a href="#projects" class="about__scroll" id="scroll-button">
-                                        <div class="about__scroll-box">
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </div>
-                                    </a>                                                                   
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
- <!--==================== PROJECTS SECTION====================-->
-<section class="projects section" id="projects">
-    <!--filter--------->
-    <ul class="portfolio-filter">
-        <li class="list portfolio-filter-active" data-filter="all">all.</li>
-        <li class="list" data-filter="app">projects.</li>
-        <li class="list" data-filter="ui">ui/ux.</li>
-    </ul>
-    <!--container--------->
-    <div class="portfolio-container">
-
-        <!--1------------>
-        <a href="webproj.png" class="portfolio-box app" data-lightbox="work">
-            <img alt="" src="webproj.png">
-        </a>
-
-        <!--2------------
-        <a href="images/b-2.jpg" class="portfolio-box app" data-lightbox="work">
-            <img alt="" src="images/b-2.jpg">
-        </a> -->
-
-        <!--=================UI SEC---===================-->
-        <!--semmapspui------------>
-        <a href="semapps.png" class="portfolio-box ui" data-lightbox="work">
-            <img alt="" src="semapps.png">
-        </a>
-        <!--semdeskui------------>
-        <a href="semdes.png" class="portfolio-box ui" data-lightbox="work">
-            <img alt="" src="semdes.png">
-        </a>
-        <!--5----------->
-        <a href="webui.png" class="portfolio-box ui" data-lightbox="work">
-            <img alt="" src="webui.png">
-        </a> 
-
-        <!--6------------
-        <a href="images/b-6.jpg" class="portfolio-box ui" data-lightbox="work">
-            <img alt="" src="images/b-6.jpg">
-        </a> -->
-
-    </div>
-</section>
-
-                        <!--====================CONTACT====================-->
-                        <section class="contact section" id="contact">
-                            <div class="contact__container grid">
-                                <div class="contact__data">
-                                    <h2 class="section__title-2">
-                                        <span>contact me.</span>
-                                    </h2>
-
-                                    <!--<p class="contact__description-1">
-                                        or dont.
-                                    </p>-->
-
-                                </div>
-                                <div class="contact__mail">
-                                    <h2 class="contact__title">
-                                        fill in your info below.
-                                    </h2>
-
-                                    <form action="" class="contact__form" id="contact-form">
-                                        <div class="contact__group">
-                                            <div class="contact__box">
-                                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="first name">
-                                                <label for="name" class="contact__label">first name.</label>
-                                            </div>
-
-                                            <div class="contact__box">
-                                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="email address.">
-                                                <label for="email" class="contact__label">email address.</label>
-                                            </div>
-
-                                            <div class="contact__box">
-                                                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="subject.">
-                                                <label for="subject" class="contact__label">subject.</label>
-                                            </div>
-
-                                            <div class="contact__box contact__area">
-                                                <input type="text" name="user_message" class="contact__input" id="message" required placeholder="message.">
-                                                <label for="message" class="contact__label">message.</label>
-                                            </div>
-
-                                            <p class="contact__message" id="contact-message"></p>
-
-                                            <button type="submit" class="contact__button button">
-                                                <i class="ri-send-plane-line"></i> send.
-
-                                            </button>
-                                        </form>
-                                    </div>
-
-                                    <div class="contact__social">
-                                        <img src="" alt="" class="contact__social-arrow">
-                                        
-                                        <div class="contact__social-data">
-                                            <div>
-                                                <p class="contact__social-description-1">
-                                                    I will respond to your email as soon as possible.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </main>
-
-                        <!--==================== FOOTER ====================-->
-                        <footer class="footer">
-                            <div class="footer__container container grid">
-                                <ul class="footer__links">
-                                    <li>
-                                        <a href="about" class="footer__link">about.</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#portfolio" class="footer__link">portfolio.</a>
-                                    </li>
-
-                                    <span class="footer__copy">
-                                        &#169; All Rights Reserved By
-                                        <a href="">Bedimcode.</a>
-                                    </span>
-                                </ul>
-                            </div>
-                        </footer>
-                        
-                        <!--========== SCROLL UP ==========-->
-                        <a href="" class="scrollup" id="scroll-up">
-                            <i class="ri-arrow-up-s-line"></i>
-                        </a>
-
-                        <!--=============== SCROLLREVEAL ===============-->
-                        
-                        <script src=""></script>
-                        
-                        <!--=============== EMAIL JS ===============-->
-                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-                        
-                        
-                        
-                        <!--=============== MAIN ===============-->
-                        
-                        <script src="main.js"></script>
+    <!-------Background img------------->
 
 
+        <div class="main-container">
+            <h1>This portfolio is under maintence.. Will be back up shortly!</h1>
 
-    <!--=============== TYPING ===============-->
-     <script>
-        var typed = new Typed(".auto-type", {
-          strings: ["software development", "web development", "digital art"],
-          typeSpeed: 90,
-          backSpeed: 90,
-          loop: true
-        });
-      </script>
+            <h1>About me.</h1>
 
-<script>
-    $('.portfolio-filter li').click(function () {
-        $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active');
-    });
+            <p>I am a computer science student with a passion for both 
+                art and technology. <br> I build projects to strengthen my interest,
+                ranging from UI/UX design,</p> <p class="second-line" style="text-indent: 4rem;">web development, and interactive software.</p>
 
-    $('.list').click(function () {
-        const value = $(this).attr('data-filter');
-        if (value == 'all') {
-            $('.portfolio-box').show('1000');
-        } else {
-            $('.portfolio-box').not('.' + value).hide('1000');
-            $('.portfolio-box').filter('.' + value).show('1000');
-        }
-    });
-</script>
-     
+        </div>
 
-<!--=============== SCRIPT FILE ===============-->
-<script src="script.js"></script>
+        <div class="socials">
 
-<!-- Typed.js for typing animation -->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <h1>Socials.</h1>
+
+            <div class="social-buttons">
+
+            <!---------Linkedin------->
+
+            <a href="https://www.linkedin.com/in/queniya-williams-b3b89227a/">
+                
+                <button class="btn"><i class="ri-linkedin-box-fill"></i></button>
+
+            </a>
 
 
-  </body>
+            <!--------Github--------->
+            <a href="https://github.com/itsthedigitalwill">
+                
+                <button class="btn"><i class="ri-github-fill"></i></button>
+
+            </a>
+        </div>
+
+        </div>
+
+
+    
+</body>
 </html>
