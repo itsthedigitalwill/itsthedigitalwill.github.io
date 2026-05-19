@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222222;
+    background-image: url(./assets/halftone-simple.png);
+  }
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+  }
+
+  .folder-tab {
+    position: absolute;
+  
+    top: -20px;
+    right: 460px;
+  
+    width: 120px;
+    height: 40px;
+  
+    background-color: white;
+    border-radius: 100px 20px ;
+  
+    border-top-left-radius: 12px;
+    border-top-right-radius: 200px;
+  }
+
+  
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .mainimg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .name {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .description {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    background-color: #55555583;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: 90px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .note {
+    color: #666;
+    font-size: 0.9rem;
+  }
